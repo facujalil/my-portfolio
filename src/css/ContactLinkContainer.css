@@ -1,0 +1,73 @@
+.contact-link-container {
+  position: relative;
+  width: 2.315rem;
+  height: 2.315rem;
+  transform: rotate(-20deg) skewX(30deg);
+}
+
+.contact-link-container a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #1f1f1f;
+  transition: 0.4s;
+  opacity: 0.8;
+}
+
+.contact-link-container a i {
+  font-size: 1.15em;
+}
+
+.contact-link-container span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #1f1f1f;
+  box-shadow: 0px 0px 4px rgb(255, 255, 255, 0.05);
+  transition: 0.4s;
+  opacity: 0.3;
+}
+
+.contact-link-container:hover a {
+  transform: translate(21px, -21px);
+}
+
+.contact-link-container:hover span:nth-of-type(1) {
+  transform: translate(0px, 0px);
+}
+
+.contact-link-container:hover span:nth-of-type(2) {
+  transform: translate(7px, -7px);
+}
+
+.contact-link-container:hover span:nth-of-type(3) {
+  transform: translate(14px, -14px);
+}
+
+.contact-link-container:nth-of-type(1):hover a,
+.contact-link-container:nth-of-type(1):hover span {
+  background-color: #0077b5;
+}
+
+.contact-link-container:nth-of-type(2):hover a,
+.contact-link-container:nth-of-type(2):hover span {
+  background-color: #25d366;
+}
+
+.contact-link-container:nth-of-type(3):hover a,
+.contact-link-container:nth-of-type(3):hover span {
+  background-color: #dd2a7b;
+}
+
+.contact-link-container:nth-of-type(4):hover a,
+.contact-link-container:nth-of-type(4):hover span {
+  background-color: #000000;
+}

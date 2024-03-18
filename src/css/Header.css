@@ -1,0 +1,63 @@
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 18.5vh;
+  color: #ffffff;
+  background-color: #161616;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 35px 0px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  max-width: 1280px;
+}
+
+#logo {
+  z-index: 999;
+  height: 3.35rem;
+  width: 3.35rem;
+}
+
+@media screen and (max-width: 920px) {
+  header {
+    min-height: auto;
+    padding: 2.5rem 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  header {
+    padding: 2rem 0;
+  }
+
+  .hamburguer-menu-button {
+    z-index: 999;
+    font-size: 1em;
+    background-color: transparent;
+    border: none;
+  }
+
+  .hamburguer-menu-button i {
+    vertical-align: middle;
+    font-size: 2.5em;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  .header-content {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .header-content {
+    width: 90%;
+  }
+}
