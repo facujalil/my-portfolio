@@ -1,0 +1,55 @@
+.dropdown {
+  position: relative;
+}
+
+.selected-language {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 3.5rem;
+  padding: 0.5rem;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  background-color: #1f1f1f;
+  border-radius: 4px;
+}
+
+.selected-language img {
+  width: 1.15rem;
+}
+
+.selected-language i {
+  vertical-align: middle;
+  font-size: 0.75em;
+}
+
+.language-option {
+  position: absolute;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.5rem;
+  padding: 0.5rem;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  background-color: #1f1f1f;
+  box-shadow: 0 0 0 1px rgb(255, 255, 255, 0.25);
+  cursor: pointer;
+}
+
+.language-option img {
+  width: 1.15rem;
+}
+
+@media screen and (max-width: 700px) {
+  .dropdown-container {
+    position: absolute;
+    right: 0;
+    bottom: 3.25rem;
+    left: 0;
+    justify-content: center;
+  }
+}

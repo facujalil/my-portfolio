@@ -1,0 +1,21 @@
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 10rem;
+  max-width: calc(50% - 1rem);
+  opacity: 0.5;
+}
+
+.skill-item img {
+  height: 6.25rem;
+}
+
+.skill-item p {
+  font-size: 1.25em;
+  font-weight: 700;
+  text-align: center;
+  user-select: none;
+}

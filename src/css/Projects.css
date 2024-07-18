@@ -1,0 +1,23 @@
+#projects {
+  gap: 5rem;
+  padding: 2.5rem 0;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2.5rem;
+}
+
+@media screen and (max-width: 700px) {
+  #projects {
+    gap: 4rem;
+    padding: 2rem 0;
+  }
+
+  .project-list {
+    gap: 2rem;
+  }
+}
