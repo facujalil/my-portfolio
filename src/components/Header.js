@@ -12,9 +12,12 @@ function Header() {
 
   useEffect(() => {
     if (windowWidth <= 700 && openMobileMenu) {
-      document.body.parentElement.style.overflowY = "hidden";
+      document.documentElement.style.scrollBehavior = "auto";
+      document.documentElement.scrollTop = 0;
+      document.body.style.overflowY = "hidden";
     } else {
-      document.body.parentElement.style.overflowY = "auto";
+      document.documentElement.style.scrollBehavior = "smooth";
+      document.body.style.overflowY = "auto";
     }
   }, [windowWidth, openMobileMenu]);
 
@@ -35,7 +38,7 @@ function Header() {
 
         {windowWidth <= 700 && (
           <button
-            className="hamburguer-menu-button"
+            className="hamburger-menu-button"
             onClick={() => setOpenMobileMenu(!openMobileMenu)}
           >
             {openMobileMenu ? (
