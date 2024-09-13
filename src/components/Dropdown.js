@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import "../css/Dropdown.css";
 import spainFlag from "../assets/img/spain-flag.png";
-import englandFlag from "../assets/img/england-flag.png";
+import ukFlag from "../assets/img/uk-flag.png";
 import { Context } from "../context/Context";
 
 function Dropdown() {
@@ -33,8 +33,8 @@ function Dropdown() {
     >
       <div className="selected-language">
         <img
-          src={language === "es" ? spainFlag : englandFlag}
-          alt={language === "es" ? "Bandera de España" : "England flag"}
+          src={language === "es" ? spainFlag : ukFlag}
+          alt={language === "es" ? "Español" : "English"}
         />{" "}
         <i className="fa-solid fa-angle-down"></i>
       </div>
@@ -47,8 +47,8 @@ function Dropdown() {
           }}
         >
           <img
-            src={language === "es" ? englandFlag : spainFlag}
-            alt={language === "es" ? "Bandera de España" : "England flag"}
+            src={language === "es" ? ukFlag : spainFlag}
+            alt={language === "es" ? "Inglés" : "Spanish"}
           />
         </div>
       )}
