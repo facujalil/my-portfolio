@@ -45,7 +45,7 @@ function Projects() {
     {
       image: toDoListProject,
       name: "To Do List",
-      technologies: "React, Redux & CSS",
+      technologies: "React & CSS",
       demoLink: "https://to-do-list-fj.vercel.app",
       repoLink: "https://github.com/facujalil/to-do-list",
     },
