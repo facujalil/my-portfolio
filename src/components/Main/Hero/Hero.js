@@ -1,11 +1,11 @@
 import { useContext } from "react";
 import style from "./Hero.module.css";
-import { Context } from "../../../context/Context";
-import useWindowWidth from "../../../hooks/useWindowWidth";
+import { Context } from "context/Context";
+import useWindowWidth from "hooks/useWindowWidth";
 import Section from "../common/Section/Section";
-import desktopAvatar from "../../../assets/img/desktop-avatar.svg";
-import mobileAvatar from "../../../assets/img/mobile-avatar.svg";
-import curriculumVitaePdf from "../../../assets/Curriculum Vitae - Facundo Jalil.pdf";
+import desktopAvatar from "assets/img/desktop-avatar.svg";
+import mobileAvatar from "assets/img/mobile-avatar.svg";
+import curriculumVitaePdf from "assets/Curriculum Vitae - Facundo Jalil.pdf";
 
 function Hero() {
   const { language } = useContext(Context);

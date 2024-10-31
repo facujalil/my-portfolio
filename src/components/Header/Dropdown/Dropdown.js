@@ -1,8 +1,8 @@
 import { useContext, useEffect, useState } from "react";
 import style from "./Dropdown.module.css";
-import spainFlag from "../../../assets/img/spain-flag.png";
-import ukFlag from "../../../assets/img/uk-flag.png";
-import { Context } from "../../../context/Context";
+import spainFlag from "assets/img/spain-flag.png";
+import ukFlag from "assets/img/uk-flag.png";
+import { Context } from "context/Context";
 
 function Dropdown() {
   const { language, setLanguage } = useContext(Context);

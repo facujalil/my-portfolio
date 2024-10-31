@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import style from "./Contact.module.css";
-import { Context } from "../../../context/Context";
+import { Context } from "context/Context";
 import Section from "../common/Section/Section";
 import ContactForm from "./ContactForm/ContactForm";
 import ContactLink from "./ContactLink/ContactLink";

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import style from "./Header.module.css";
-import useWindowWidth from "../../hooks/useWindowWidth";
-import logo from "../../assets/img/logo.png";
+import useWindowWidth from "hooks/useWindowWidth";
+import logo from "assets/img/logo.png";
 import Nav from "./Nav/Nav";
 import Dropdown from "./Dropdown/Dropdown";
 

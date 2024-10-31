@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import style from "./Footer.module.css";
-import { Context } from "../../context/Context";
+import { Context } from "context/Context";
 
 function Footer() {
   const { language } = useContext(Context);

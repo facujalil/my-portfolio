@@ -1,5 +1,5 @@
 import { Context } from "./Context";
-import useLanguage from "../hooks/useLanguage";
+import useLanguage from "hooks/useLanguage";
 
 function Provider({ children }) {
   const { language, setLanguage } = useLanguage();

@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import style from "./Nav.module.css";
-import { Context } from "../../../context/Context";
-import useWindowWidth from "../../../hooks/useWindowWidth";
+import { Context } from "context/Context";
+import useWindowWidth from "hooks/useWindowWidth";
 
 function Nav({ openMobileMenu, setOpenMobileMenu }) {
   const { language } = useContext(Context);

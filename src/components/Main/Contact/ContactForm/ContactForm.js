@@ -1,6 +1,6 @@
 import { useContext, useRef } from "react";
 import style from "./ContactForm.module.css";
-import { Context } from "../../../../context/Context";
+import { Context } from "context/Context";
 import emailjs from "@emailjs/browser";
 
 function ContactForm() {

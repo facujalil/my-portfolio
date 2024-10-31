@@ -1,12 +1,12 @@
 import { useContext } from "react";
 import style from "./Projects.module.css";
-import { Context } from "../../../context/Context";
-import twitterXCloneProject from "../../../assets/img/twitter-x-clone-project.jpg";
-import foodverseProject from "../../../assets/img/foodverse-project.jpg";
-import weatherAppProject from "../../../assets/img/weather-app-project.jpg";
-import movieSearchProject from "../../../assets/img/movie-search-project.jpg";
-import quizGameProject from "../../../assets/img/quiz-game-project.jpg";
-import puertoFunesPropiedadesProject from "../../../assets/img/puerto-funes-propiedades-project.jpg";
+import { Context } from "context/Context";
+import twitterXCloneProject from "assets/img/twitter-x-clone-project.jpg";
+import foodverseProject from "assets/img/foodverse-project.jpg";
+import weatherAppProject from "assets/img/weather-app-project.jpg";
+import movieSearchProject from "assets/img/movie-search-project.jpg";
+import quizGameProject from "assets/img/quiz-game-project.jpg";
+import puertoFunesPropiedadesProject from "assets/img/puerto-funes-propiedades-project.jpg";
 import Section from "../common/Section/Section";
 import ProjectCard from "./ProjectCard/ProjectCard";
 
