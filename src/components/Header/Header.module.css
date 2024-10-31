@@ -1,0 +1,68 @@
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 18.5vh;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 35px 0px;
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  max-width: 1280px;
+}
+
+.logo {
+  width: 3.35rem;
+  height: 3.35rem;
+}
+
+@media screen and (max-width: 920px) {
+  .header {
+    min-height: auto;
+    padding: 2.5rem 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .header {
+    padding: 2rem 0;
+  }
+
+  .headerContent {
+    width: 85%;
+  }
+
+  .logo,
+  .hamburgerMenuButton {
+    z-index: 999;
+  }
+
+  .hamburgerMenuButton {
+    font-size: 1em;
+  }
+
+  .hamburgerMenuButton i {
+    vertical-align: middle;
+    font-size: 2.5em;
+  }
+
+  .dropdownContainer {
+    position: absolute;
+    right: 0;
+    bottom: 3.25rem;
+    left: 0;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .headerContent {
+    width: 90%;
+  }
+}

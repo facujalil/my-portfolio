@@ -1,0 +1,30 @@
+.aboutMe {
+  gap: 5rem;
+  padding: 2.5rem 0;
+}
+
+.aboutMeContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 80%;
+}
+
+.aboutMeContent p {
+  width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  .aboutMe {
+    gap: 4rem;
+    padding: 2rem 0;
+  }
+
+  .aboutMeContent {
+    width: 100%;
+  }
+
+  .aboutMeContent p {
+    text-align: center;
+  }
+}

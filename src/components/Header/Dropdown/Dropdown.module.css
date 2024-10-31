@@ -1,0 +1,41 @@
+.dropdown {
+  position: relative;
+}
+
+.selectedLanguage {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 3.5rem;
+  padding: 0.5rem;
+  background-color: #1f1f1f;
+  border-radius: 4px;
+}
+
+.selectedLanguage img {
+  width: 1.15rem;
+}
+
+.selectedLanguage i {
+  vertical-align: middle;
+  font-size: 0.75em;
+}
+
+.languageOption {
+  position: absolute;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.5rem;
+  padding: 0.5rem;
+  background-color: #1f1f1f;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.25);
+  cursor: pointer;
+}
+
+.languageOption img {
+  width: 1.15rem;
+}

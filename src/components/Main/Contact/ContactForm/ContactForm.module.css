@@ -1,0 +1,59 @@
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 31.5rem;
+}
+
+.contactForm * {
+  width: 100%;
+  font-size: 1em;
+}
+
+.contactForm input,
+.contactForm textarea {
+  padding: 0.7rem 0;
+  color: #ffffff;
+  background-color: transparent;
+  border-bottom: 1px solid #00ccff;
+}
+
+.contactForm input::placeholder,
+.contactForm textarea::placeholder {
+  color: #ffffff;
+}
+
+.contactForm input:nth-child(2) {
+  margin: 1.25rem 0;
+}
+
+.contactForm textarea {
+  height: 8rem;
+}
+
+.contactForm button {
+  width: 10rem;
+  margin-top: 2.5rem;
+  padding: 0.7rem 1rem;
+  border: 1px solid #00ccff;
+  border-radius: 99px;
+}
+
+@media (hover: hover) {
+  .contactForm button:hover {
+    color: #00ccff;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .contactForm {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .contactForm {
+    width: 100%;
+  }
+}

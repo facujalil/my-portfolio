@@ -1,0 +1,42 @@
+.projectCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  max-width: 18.5rem;
+  padding: 2rem;
+  text-align: center;
+  background-color: #161616;
+  border-radius: 8px;
+  box-shadow: 0 0 4px #00ccff;
+}
+
+.projectCard img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.projectCard h3 {
+  font-size: 1.5em;
+}
+
+.projectLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.8em;
+}
+
+.projectLink {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (hover: hover) {
+  .projectLink:hover {
+    color: #00ccff;
+  }
+}
