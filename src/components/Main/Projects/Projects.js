@@ -5,7 +5,7 @@ import twitterXCloneProject from "../../../assets/img/twitter-x-clone-project.jp
 import foodverseProject from "../../../assets/img/foodverse-project.jpg";
 import weatherAppProject from "../../../assets/img/weather-app-project.jpg";
 import movieSearchProject from "../../../assets/img/movie-search-project.jpg";
-import toDoListProject from "../../../assets/img/to-do-list-project.jpg";
+import quizGameProject from "../../../assets/img/quiz-game-project.jpg";
 import puertoFunesPropiedadesProject from "../../../assets/img/puerto-funes-propiedades-project.jpg";
 import Section from "../common/Section/Section";
 import ProjectCard from "./ProjectCard/ProjectCard";
@@ -60,11 +60,11 @@ function Projects() {
       repoLink: "https://github.com/facujalil/movie-search",
     },
     {
-      image: toDoListProject,
-      title: "To Do List",
+      image: quizGameProject,
+      title: "Quiz Game",
       technologies: ["React", "CSS"],
-      demoLink: "https://to-do-list-fj.vercel.app",
-      repoLink: "https://github.com/facujalil/to-do-list",
+      demoLink: "https://quiz-game-fj.vercel.app",
+      repoLink: "https://github.com/facujalil/quiz-game",
     },
     {
       image: puertoFunesPropiedadesProject,
