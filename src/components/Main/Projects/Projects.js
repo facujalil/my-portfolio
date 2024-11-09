@@ -1,11 +1,11 @@
 import { useContext } from "react";
 import style from "./Projects.module.css";
 import { Context } from "context/Context";
+import realtimeChatAppProject from "assets/img/realtime-chat-app-project.jpg";
 import twitterXCloneProject from "assets/img/twitter-x-clone-project.jpg";
 import foodverseProject from "assets/img/foodverse-project.jpg";
 import weatherAppProject from "assets/img/weather-app-project.jpg";
 import movieSearchProject from "assets/img/movie-search-project.jpg";
-import quizGameProject from "assets/img/quiz-game-project.jpg";
 import puertoFunesPropiedadesProject from "assets/img/puerto-funes-propiedades-project.jpg";
 import Section from "../common/Section/Section";
 import ProjectCard from "./ProjectCard/ProjectCard";
@@ -14,6 +14,25 @@ function Projects() {
   const { language } = useContext(Context);
 
   const projectList = [
+    {
+      image: realtimeChatAppProject,
+      title: "Realtime Chat App",
+      technologies: [
+        "React",
+        "TypeScript",
+        "Redux Toolkit",
+        "Tailwind CSS",
+        "Node.js",
+        "Express.js",
+        "Socket.IO",
+        "PostgreSQL",
+        "UI Avatars API",
+        "bcrypt",
+        "JWT",
+      ],
+      demoLink: "https://realtime-chat-app-fj.vercel.app",
+      repoLink: "https://github.com/facujalil/realtime-chat-app",
+    },
     {
       image: twitterXCloneProject,
       title: "Twitter X Clone",
@@ -58,13 +77,6 @@ function Projects() {
       technologies: ["React", "CSS Modules", "The Movie DB API"],
       demoLink: "https://movie-search-fj.vercel.app",
       repoLink: "https://github.com/facujalil/movie-search",
-    },
-    {
-      image: quizGameProject,
-      title: "Quiz Game",
-      technologies: ["React", "CSS"],
-      demoLink: "https://quiz-game-fj.vercel.app",
-      repoLink: "https://github.com/facujalil/quiz-game",
     },
     {
       image: puertoFunesPropiedadesProject,
