@@ -22,7 +22,7 @@
 }
 
 .heroInfoContainer h1 span {
-  text-wrap: nowrap;
+  white-space: nowrap;
 }
 
 .name {
