@@ -6,7 +6,7 @@ import Nav from "./Nav/Nav";
 import Dropdown from "./Dropdown/Dropdown";
 
 function Header() {
-  const { windowWidth } = useWindowWidth();
+  const windowWidth = useWindowWidth();
 
   const [openMobileMenu, setOpenMobileMenu] = useState(false);
 

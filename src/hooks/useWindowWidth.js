@@ -15,7 +15,7 @@ function useWindowWidth() {
     };
   }, []);
 
-  return { windowWidth, setWindowWidth };
+  return windowWidth;
 }
 
 export default useWindowWidth;

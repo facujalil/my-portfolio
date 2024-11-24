@@ -3,14 +3,14 @@ import style from "./Hero.module.css";
 import { Context } from "context/Context";
 import useWindowWidth from "hooks/useWindowWidth";
 import Section from "../common/Section/Section";
-import desktopAvatar from "assets/img/desktop-avatar.svg";
 import mobileAvatar from "assets/img/mobile-avatar.svg";
+import desktopAvatar from "assets/img/desktop-avatar.svg";
 import curriculumVitaePdf from "assets/Curriculum Vitae - Facundo Jalil.pdf";
 
 function Hero() {
   const { language } = useContext(Context);
 
-  const { windowWidth } = useWindowWidth();
+  const windowWidth = useWindowWidth();
 
   return (
     <Section id="hero" className={style.hero}>
@@ -29,11 +29,11 @@ function Hero() {
               </>
             )}
           </h1>
-          {windowWidth <= 700 && (
+          {windowWidth <= 700 ? (
             <div className={style.heroImgContainer}>
               <img src={mobileAvatar} alt="Avatar" />
             </div>
-          )}
+          ) : null}
           <p>
             {language === "es"
               ? "Tengo 23 años y vivo en Rosario, Argentina. Mi objetivo es formar parte de un equipo de trabajo en el que pueda consolidarme profesionalmente y contribuir a los logros organizacionales."
@@ -47,11 +47,11 @@ function Hero() {
             {language === "es" ? "Descargar" : "Download"} CV
           </a>
         </div>
-        {windowWidth > 700 && (
+        {windowWidth > 700 ? (
           <div className={style.heroImgContainer}>
             <img src={desktopAvatar} alt="Avatar" />
           </div>
-        )}
+        ) : null}
       </div>
     </Section>
   );

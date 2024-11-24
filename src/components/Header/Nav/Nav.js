@@ -6,7 +6,7 @@ import useWindowWidth from "hooks/useWindowWidth";
 function Nav({ openMobileMenu, setOpenMobileMenu }) {
   const { language } = useContext(Context);
 
-  const { windowWidth } = useWindowWidth();
+  const windowWidth = useWindowWidth();
 
   const handleClick = () => {
     if (openMobileMenu) {
