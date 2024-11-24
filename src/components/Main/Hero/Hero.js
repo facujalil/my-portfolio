@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import style from "./Hero.module.css";
-import { Context } from "context/Context";
+import { LanguageContext } from "context/LanguageContext";
 import useWindowWidth from "hooks/useWindowWidth";
 import Section from "../common/Section/Section";
 import mobileAvatar from "assets/img/mobile-avatar.svg";
@@ -8,7 +8,7 @@ import desktopAvatar from "assets/img/desktop-avatar.svg";
 import curriculumVitaePdf from "assets/Curriculum Vitae - Facundo Jalil.pdf";
 
 function Hero() {
-  const { language } = useContext(Context);
+  const { language } = useContext(LanguageContext);
 
   const windowWidth = useWindowWidth();
 

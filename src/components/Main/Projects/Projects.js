@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import style from "./Projects.module.css";
-import { Context } from "context/Context";
+import { LanguageContext } from "context/LanguageContext";
 import realtimeChatAppProject from "assets/img/realtime-chat-app-project.jpg";
 import twitterXCloneProject from "assets/img/twitter-x-clone-project.jpg";
 import foodverseProject from "assets/img/foodverse-project.jpg";
@@ -11,7 +11,7 @@ import Section from "../common/Section/Section";
 import ProjectCard from "./ProjectCard/ProjectCard";
 
 function Projects() {
-  const { language } = useContext(Context);
+  const { language } = useContext(LanguageContext);
 
   const projectList = [
     {

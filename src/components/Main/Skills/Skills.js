@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import style from "./Skills.module.css";
-import { Context } from "context/Context";
+import { LanguageContext } from "context/LanguageContext";
 import html5Icon from "assets/img/html5-icon.svg";
 import css3Icon from "assets/img/css3-icon.svg";
 import tailwindCss from "assets/img/tailwind-css-icon.svg";
@@ -17,7 +17,7 @@ import Section from "../common/Section/Section";
 import SkillItem from "./SkillItem/SkillItem";
 
 function Skills() {
-  const { language } = useContext(Context);
+  const { language } = useContext(LanguageContext);
 
   const skillList = [
     { image: html5Icon, name: "HTML" },

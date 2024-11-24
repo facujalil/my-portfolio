@@ -1,10 +1,10 @@
 import { useContext, useRef } from "react";
 import style from "./ContactForm.module.css";
-import { Context } from "context/Context";
+import { LanguageContext } from "context/LanguageContext";
 import emailjs from "@emailjs/browser";
 
 function ContactForm() {
-  const { language } = useContext(Context);
+  const { language } = useContext(LanguageContext);
 
   const formRef = useRef();
   const submitButtonRef = useRef();

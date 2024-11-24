@@ -1,10 +1,10 @@
 import { useContext } from "react";
 import style from "./AboutMe.module.css";
-import { Context } from "context/Context";
+import { LanguageContext } from "context/LanguageContext";
 import Section from "../common/Section/Section";
 
 function AboutMe() {
-  const { language } = useContext(Context);
+  const { language } = useContext(LanguageContext);
 
   return (
     <Section
