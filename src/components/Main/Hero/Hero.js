@@ -36,8 +36,8 @@ function Hero() {
           ) : null}
           <p>
             {language === "es"
-              ? "Tengo 23 años y vivo en Rosario, Argentina. Mi objetivo es formar parte de un equipo de trabajo en el que pueda consolidarme profesionalmente y contribuir a los logros organizacionales."
-              : "I am 23 years old and I live in Rosario, Argentina. My goal is to be part of a work team in which I can consolidate myself professionally and contribute to organizational achievements."}
+              ? "Tengo 24 años y vivo en Rosario, Argentina. Mi objetivo es formar parte de un equipo de trabajo en el que pueda consolidarme profesionalmente y contribuir a los logros organizacionales."
+              : "I am 24 years old and I live in Rosario, Argentina. My goal is to be part of a work team in which I can consolidate myself professionally and contribute to organizational achievements."}
           </p>
           <a
             href={curriculumVitaePdf}
